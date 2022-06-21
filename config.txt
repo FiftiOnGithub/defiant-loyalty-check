@@ -1,0 +1,1 @@
+{"ranks":{"Member":0,"Loyal":4,"Elder":8,"Veteran":12,"Immortal":24},"TIME_UNIT_MS":2629800000,"guild":"Defiant"}
