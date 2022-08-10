@@ -24,6 +24,10 @@ fs.access("./config.txt", async (err) => {
 	}
 	fs.writeFileSync("./config.txt",JSON.stringify(data))
 	console.log("Created config file. Please make sure it's correct and then run this file again.")
+	console.log("Closing window in 10 seconds.")
+	new Promise((resolve) => {
+		setTimeout(resolve, 10000);
+	});
 	} else {
 		
 		
@@ -59,9 +63,9 @@ fs.access("./config.txt", async (err) => {
 					console.log(strlength(content[key]["name"]," ", 16) + " - " + strlength(Object.keys(data["ranks"])[index], " ", longestranklength) + " -> " + Object.keys(data["ranks"])[correctindex])
 				}
 			}
-			console.log("Complete. Closing in 10 seconds.")
+			console.log("Complete. Closing in 20 seconds.")
 			new Promise((resolve) => {
-				setTimeout(resolve, 10000);
+				setTimeout(resolve, 20000);
 			});
 			
 		})
